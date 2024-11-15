@@ -38,12 +38,16 @@ export default {
                 generator: {
                     filename: '[name][ext]'
                 }
-            }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.njk'
+            template: './src/pages/index.njk'
         })
     ],
 }

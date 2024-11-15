@@ -6,8 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-     <h1 class="text-1xl font-bold underline">
-        Hello world!
-    </h1>
+    {% include 'src/partials/nav.njk' %}
+    {% block content %}{% endblock %}
 </body>
 </html>
