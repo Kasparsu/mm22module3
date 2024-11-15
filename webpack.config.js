@@ -17,7 +17,7 @@ export default {
         static: {
             directory: path.resolve(__dirname, 'public')
         },
-        historyApiFallback: true,
+        watchFiles: ['src/**/*'],
         open: true,
         port: 9000,
         compress: true,
@@ -26,7 +26,7 @@ export default {
         rules: [
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader']
+                use: ['style-loader', 'css-loader', 'postcss-loader']
             },
             {
                 test: /\.njk$/i,
