@@ -1,6 +1,28 @@
 {% extends 'src/partials/layout.njk' %}
 {% block content %}
-     <h1 class="text-1xl font-bold underline">
-        Hello world!
-    </h1>
+<div class="w-full h-screen">
+    <div class="absolute top-auto w-full h-screen bg-[url('/public/header.png')] brightness-40"></div>
+    <div class="relative z-10 text-white pt-96 ml-24">
+        <div class="text-6xl font-primary">
+            <p class="mb-6">Professional eports team
+                <span class="uppercase text-primary">Undead Seekers</span>
+            </p>
+            <p class="font-secondary text-8xl capitalize">From beyond the grave,</p>
+            <p class="font-secondary text-8xl capitalize mb-12">
+                We <span class="text-primary">play to win</span>.
+            </p>
+        </div>
+        <div class="flex z-10 font-primary text-2xl space-x-6">
+            <button class="flex items-center border-2 border-white rounded-xl py-2 px-16 hover:bg-white hover:text-primary"><i class="nf nf-fa-youtube me-4"></i>Meet the team</button>
+            <button class="flex items-center border-2 border-white rounded-xl py-2 px-16 hover:bg-white hover:text-primary"><i class="nf nf-md-cart me-4"></i>Merch store</button>
+        </div>
+    </div>
+</div>
+<div class="w-full h-screen">
+    <div class="absolute w-full top-auto bg-cover bg-[url('/public/background.gif')] h-full brightness-40">
+    </div>
+    <div class="relative z-10 h-full mx-24 text-white flex items-center">
+        <img class="rounded-xl" src="https://picsum.photos/seed/kaspar/845/514">
+    </div>  
+</div>
 {% endblock %}

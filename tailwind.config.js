@@ -8,7 +8,11 @@ export default {
         'secondary': '#D699EB'
       },
       fontFamily: {
-        primary: ['Kenyan Coffee', 'sans-serif']
+        primary: ['Kenyan Coffee'],
+        secondary: ['Komikazoom'],
+      },
+      brightness: {
+        40: '.40',
       }
     },
   },

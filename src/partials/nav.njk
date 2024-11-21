@@ -1,18 +1,26 @@
-<nav class="bg-primary text-white font-primary text-5xl flex py-10 px-24">
-    <img src="/navlogo.svg" class="h-14">
-    <ul class="flex space-x-16 ml-16">
-        <li><a href="#">Home</a></li>
-        <li class="text-secondary"><a href="#">Store</a></li>
-        <li class="text-secondary"><a href="#">About</a></li>
-        <li class="text-secondary"><a href="#">Contact us</a></li>
-    </ul>
-    <div class="relative w-64 mx-auto">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
-        </div>
-        <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border-4 border-white rounded-lg bg-primary "/>
-        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-transparent font-primary text-xl px-4 py-2 ">Search</button>
+<nav class="fixed z-10 w-full opacity-75 bg-primary justify-between items-center text-white font-primary text-3xl flex py-6 px-24">
+    <div class="flex items-center">
+        <img src="/navlogo.svg" class="h-14">
+        <ul class="flex space-x-16 ml-16">
+            <li><a href="#">Home</a></li>
+            <li class="text-secondary"><a href="#">Store</a></li>
+            <li class="text-secondary"><a href="#">About</a></li>
+            <li class="text-secondary"><a href="#">Contact us</a></li>
+        </ul>
     </div>
+    <div class="flex">
+        <div class="flex items-center h-10 w-96">
+            <div class="flex items-center h-full border-l-2 border-t-2 border-b-2 border-white rounded-l-xl">
+                <i class="text-xl text-white ms-3 nf nf-cod-search"></i>
+            </div>
+            <input type="search" id="default-search" class="w-full h-full ps-10 text-xl text-white border-y-2 border-white bg-primary focus:outline-none focus-visible:none"/>
+            <button type="submit" class="h-full text-white bg-transparent font-primary text-xl px-4 border-r-2 border-t-2 border-b-2 border-white rounded-r-xl">Search</button>
+        </div>
+        <div class="flex items-center h-10">
+            <i class="text-3xl text-white ms-3 nf nf-fa-user"></i>
+            <i class="text-3xl text-white ms-3 nf nf-md-shopping"></i>
+        </div>
+    </div>
+
+        
 </nav>
