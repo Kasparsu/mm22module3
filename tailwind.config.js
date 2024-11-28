@@ -5,7 +5,9 @@ export default {
     extend: {
       colors: {
         'primary': '#9900CC',
-        'secondary': '#D699EB'
+        'secondary': '#D699EB',
+        'success': '#00F937',
+        'defeat': '#D00000'
       },
       fontFamily: {
         primary: ['Kenyan Coffee'],
@@ -13,7 +15,13 @@ export default {
       },
       brightness: {
         40: '.40',
-      }
+      },
+      height: {
+        'inherit': 'inherit',
+      },
+      width: {
+        'inherit': 'inherit',
+      },
     },
   },
   plugins: [],
